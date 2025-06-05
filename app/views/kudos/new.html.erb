@@ -1,0 +1,12 @@
+
+<h1>MoNeMa</h1>
+<h3>登録ページ</h3>
+<%= form_for @kudo do |f| %>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <%= f.submit "完了" %>
+<% end %>
+
+<%= link_to "一覧に戻る", root_path %>

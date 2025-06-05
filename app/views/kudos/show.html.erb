@@ -1,0 +1,8 @@
+
+<h1>MoNeMa</h1>
+<h3>詳細</h3>
+
+<%= image_tag @kudo.image, size: '250x200'%>
+<%= link_to "編集する", edit_kudo_path(@kudo.id) %>
+<%= button_to "削除する", kudo_path(@kudo.id), method: :delete %>
+<%= link_to "Tweet一覧に戻る", kudos_path %>

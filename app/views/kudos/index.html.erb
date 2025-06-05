@@ -1,0 +1,13 @@
+<%= link_to "他人投稿", new_kudo_path %>
+<div class="kudos-container">
+  <% @kudos.each do |t| %>
+    <div class="kudos-content">
+      <% if t.image.attached? %>
+        <%= image_tag t.image, size: '250x200'%>
+      <% end %>
+      <%= link_to "詳細へ", kudo_path(t.id) %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "一覧に戻る", root_path %>
