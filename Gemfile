@@ -69,5 +69,5 @@ gem 'cloudinary'
 gem 'activestorage-cloudinary-service'
 
 group :production do
-  gem "pg", "~> 2.1"
+  gem "pg", "~> 1.2"
 end
