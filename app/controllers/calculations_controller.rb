@@ -1,5 +1,4 @@
 class CalculationsController < ApplicationController
-    before_action :authenticate_user!
     def index
         year = params[:year]&.to_i || Date.today.year
         month = params[:month]&.to_i || Date.today.month
